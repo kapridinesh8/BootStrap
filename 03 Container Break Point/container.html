@@ -1,0 +1,54 @@
+<!--In this section we are going to learn cContainer Break Points -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+    <title>Container + Media Query</title>
+
+    <style>
+        .green{
+            background-color: green;
+            height: 100px;
+        }
+    @media(max-width: 555px)
+    {
+        .green{
+            background-color: pink;
+            height: 120px;
+        }
+    }  
+    .super{
+        height: 120px;
+    }  
+    @media(max-width: 555px)
+    {
+        .super{
+            border-radius: 50%;
+            height: 150px;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <h1 class="container ">
+        HEY
+    </h1>
+    <div class="conatiner-fluid green text-center">
+        MEDIA QUERY APPLIED
+        <br>
+        <img class="d-flex mx-auto super" src="cute.png" alt="cute">
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
